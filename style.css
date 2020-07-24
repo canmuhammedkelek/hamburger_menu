@@ -1,0 +1,107 @@
+.container {
+    background-color: black;
+}
+
+.menubar {
+    overflow: hidden;
+    background-color: #00001A;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+}
+
+body {
+    font-family: 'Roboto Medium', sans-serif;
+}
+
+.menubar a.logo {
+    font-size: 24px;
+}
+
+.menubar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 20px;
+}
+
+span {
+    float: right;
+}
+
+.menubar a.icon {
+    display: none;
+}
+
+.border2 {
+    border-bottom: 2px solid white;
+    width: 100%;
+    left: 0;
+}
+
+.leftdiv {
+    float: right;
+}
+
+@media screen and (max-width: 1024px) {
+    .leftspan {
+        float: left;
+    }
+    span .hamburger {
+        float: right!important;
+    }
+    #hmbrgr {
+        float: right!important;
+        margin-left: 288px;
+    }
+    .menubar {
+        top: 0;
+        left: 0;
+    }
+    .menubar a:not(:first-child) {
+        display: none;
+    }
+    .menubar a.icon {
+        float: right;
+        display: block;
+        margin-right: 0;
+    }
+    .menubar a.logo {
+        font-size: 16px;
+    }
+    .menubarspan {
+        border-bottom: 4px solid white;
+        border-style: ;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .menubar.responsive {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+    .leftdiv {
+        float: left!important;
+    }
+    .menuitem {
+        float: !important;
+    }
+    .menubar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .menubar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
